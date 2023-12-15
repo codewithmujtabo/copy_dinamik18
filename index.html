@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header Start  -->
+    <header class="absolute top-0 left-0 w-full flex items-center z-10 px-5">
+      <div class="container py-3 lg:px-7 mx-auto">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="#home">
+              <img
+                src="https://dinamik.kemakom.org/assets/img/logo.png"
+                class="w-48"
+                alt="logo" />
+            </a>
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden">
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-slate-600 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full">
+              <ul class="block lg:flex">
+                <li>
+                  <a href="#home" class="font-bold text-white py-2 mx-8 flex"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#competition"
+                    class="font-bold text-white py-2 mx-8 flex"
+                    >Competition</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="font-bold text-white py-2 mx-8 flex"
+                    >Dinamik Talks</a
+                  >
+                </li>
+                <li>
+                  <a href="#home" class="font-bold text-white py-2 mx-8 flex"
+                    >Partner</a
+                  >
+                </li>
+                <li>
+                  <button
+                    class="font-semibold text-white py-2 mx-8 flex items-center px-4 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-blue-500 hover:to-cyan-500">
+                    Login
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End  -->
+
+    <!-- Hero Section Start  -->
+    <section class="mt-20 flex items-center flex-col">
+      <div class="container px-[35px] mx-auto lg:px-40">
+        <img
+          src="./assets/jumbotron-globe.png"
+          alt="Jumbotron Globe"
+          class="absolute right-0 px-10 lg:px-40" />
+        <h1
+          class="relative mt-32 lg:mt-60 font-bold text-4xl text-center lg:text-6xl">
+          Elevate Te<span
+            class="bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-950"
+            >ch</span
+          >
+          <br />
+          Rising Beyond Boundaries
+        </h1>
+        <p class="text-center mt-10 font-medium lg:mt-12 lg:text-xl">
+          Together, we're rising beyond boundaries to shape a future of endless
+          opportunities and <br />
+          unprecedented success
+        </p>
+
+        <!-- TIME -->
+        <div class="flex items-center justify-center mt-7 lg:mt-10 text-center">
+          <div
+            class="m-1 relative w-20 h-28 lg:w-28 lg:h-32 bg-gradient-to-b from-slate-950 to-slate-600 opacity-80 flex flex-col justify-center rounded-lg">
+            <span
+              id="days"
+              class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-900 to-white"
+              >00</span
+            >
+            <span>Days</span>
+          </div>
+          <div class="flex flex-col mx-2">
+            <span class="font-extrabold text-3xl">.</span>
+            <span class="font-extrabold text-3xl">.</span>
+          </div>
+          <div
+            class="m-1 relative w-20 h-28 lg:w-28 lg:h-32 bg-gradient-to-b from-slate-950 to-slate-600 opacity-80 flex flex-col justify-center rounded-lg">
+            <span
+              id="hours"
+              class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-900 to-white"
+              >00</span
+            >
+            <span>Hours</span>
+          </div>
+          <div class="flex flex-col mx-2">
+            <span class="font-extrabold text-3xl">.</span>
+            <span class="font-extrabold text-3xl">.</span>
+          </div>
+          <div
+            class="m-1 relative w-20 h-28 lg:w-28 lg:h-32 bg-gradient-to-b from-slate-950 to-slate-600 opacity-80 flex flex-col justify-center rounded-lg">
+            <span
+              id="minutes"
+              class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-900 to-white"
+              >00</span
+            >
+            <span>Minutes</span>
+          </div>
+        </div>
+
+        <p class="text-center mt-5 font-medium lg:text-xl">
+          heading to Dinamik Talks
+        </p>
+        <p class="text-center mt-5 font-medium lg:text-xl">
+          "Pathways Of Life Journey : Raising Up Your Personal Success"
+        </p>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start  -->
+    <section class="mt-32 lg:mt-60 mb-16 flex items-center flex-col">
+      <div class="conatiner px-[35px] mx-auto lg:px-40">
+        <h2 class="font-bold text-[32px] lg:text-5xl text-center">
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-r from-blue-950 to-white"
+            >W</span
+          >hat is DINAMIK?
+        </h2>
+        <div
+          class="flex flex-col justify-center items-center mt-10 border border-white rounded-2xl px-6 pb-6 bg-gradient-to-r from-slate-600 to-slate-950 bg-opacity-60">
+          <img
+            src="./assets/what-is-dinamik.png"
+            alt="About Dinamik"
+            class="lg:w-3/4" />
+          <p class="text-center lg:px-32 lg:text-xl lg:font-semibold">
+            Dinamik merupakan event tahunan sekaligus perayaan ulang tahun
+            Keluarga Mahasiswa Ilmu Komputer yang biasa disebut dengan Dies
+            Natalis Keluarga Besar Ilmu Komputer yang saat ini telah menginjak
+            usia ke-18 tahun, kami ingin membuat sebuah inovasi kegiatan baru
+            yang dapat membantu menyelesaikan permasalahan-permasalahan
+            fundamental terhadap kekhawatiran terhadap masa depan di era
+            globalisasi saat ini.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End  -->
+
+    <!-- Competition Section Start -->
+    <section
+      id="competition"
+      class="mt-32 lg:mt-60 mb-16 flex items-center flex-col">
+      <div
+        class="container px-[35px] mx-auto lg:px-40 flex flex-col justify-center items-center">
+        <img
+          src="https://dinamik.kemakom.org/assets/img/logo.png"
+          class="w-48"
+          alt="logo" />
+        <h2 class="font-bold text-[32px] lg:text-5xl text-center">
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-r from-blue-950 to-white"
+            >C</span
+          >ompetition
+        </h2>
+        <!-- CARDS  -->
+        <div
+          class="w-full flex flex-col lg:flex-row lg:flex-wrap justify-start items-center text-center">
+          <div
+            class="mt-12 lg:mr-7 lg:w-[30%] p-7 rounded-2xl bg-gradient-to-tl from-slate-950 to-slate-800">
+            <img
+              src="./assets/competition/competitive-programming.png"
+              alt="Competitive Programming"
+              class="w-[300px] h-[160px] object-cover mx-auto" />
+            <h3 class="text-3xl font-bold">Competitive <br />Programming</h3>
+            <p class="mt-3 text-base">
+              Kompetisi yang menguji kemampuan di bidang algoritma dan
+              pemrograman.
+            </p>
+            <button
+              class="font-semibold py-2 mt-12 w-full bg-slate-800 hover:bg-slate-900 rounded-xl">
+              Detail Lomba
+            </button>
+          </div>
+          <div
+            class="mt-12 lg:mr-7 lg:w-[30%] p-7 rounded-2xl bg-gradient-to-tl from-slate-950 to-slate-800">
+            <img
+              src="./assets/competition/user-interface-web-design.png"
+              alt="Competitive Programming"
+              class="w-[300px] h-[160px] object-cover mx-auto" />
+            <h3 class="text-3xl font-bold">User Interface Web Design</h3>
+            <p class="mt-3 text-base">
+              Kompetisi yang mengasah kemampuan peserta di bidang Desain Grafis.
+            </p>
+            <button
+              class="font-semibold py-2 mt-12 w-full bg-slate-800 hover:bg-slate-900 rounded-xl">
+              Detail Lomba
+            </button>
+          </div>
+          <div
+            class="mt-12 lg:mr-7 lg:w-[30%] p-7 rounded-2xl bg-gradient-to-tl from-slate-950 to-slate-800">
+            <img
+              src="./assets/competition/karya-tulis-ilmiah.png"
+              alt="Competitive Programming"
+              class="w-[300px] h-[160px] object-cover mx-auto" />
+            <h3 class="text-3xl font-bold">Karya Tulis Ilmiah</h3>
+            <p class="mt-3 text-base">
+              Ajang Kompetisi Intelektual dalam penulisan ilmiah di bidang
+              Teknologi Informasi dan Komunikasi.
+            </p>
+            <button
+              class="font-semibold py-2 mt-12 w-full bg-slate-800 hover:bg-slate-900 rounded-xl">
+              Detail Lomba
+            </button>
+          </div>
+          <div
+            class="mt-12 lg:pt-10 lg:mr-7 lg:w-[30%] p-7 rounded-2xl bg-gradient-to-tl from-slate-950 to-slate-800">
+            <img
+              src="./assets/competition/microteaching.png"
+              alt="Competitive Programming"
+              class="w-[300px] h-[160px] object-cover mx-auto" />
+            <h3 class="text-3xl font-bold lg:mt-7">Microteaching</h3>
+            <p class="mt-3 text-base">
+              Kompetisi pada bidang pengajaran dalam skala yang kecil.
+            </p>
+            <button
+              class="font-semibold py-2 mt-12 lg:mt-20 w-full bg-slate-800 hover:bg-slate-900 rounded-xl">
+              Detail Lomba
+            </button>
+          </div>
+          <div
+            class="mt-12 lg:mr-7 lg:w-[30%] p-7 rounded-2xl bg-gradient-to-tl from-slate-950 to-slate-800">
+            <img
+              src="./assets/competition/mahasiswa-berprestasi.png"
+              alt="Competitive Programming"
+              class="w-[300px] h-[160px] object-cover mx-auto" />
+            <h3 class="text-3xl font-bold">Mahasiswa Berprestasi</h3>
+            <p class="mt-3 text-base">
+              Kompetisi untuk memilih mahasiswa berprestasi pada prodi
+              Pendidikan Ilmu Komputer dan Ilmu Komputer.
+            </p>
+            <button
+              class="font-semibold py-2 mt-12 w-full bg-slate-800 hover:bg-slate-900 rounded-xl">
+              Detail Lomba
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Competition Section End -->
+
+    <!-- Seminar & Webinar Section Start -->
+    <section
+      id="seminar-webinar"
+      class="mt-32 lg:mt-60 mb-16 flex items-center flex-col">
+      <div
+        class="conatiner px-[35px] mx-auto lg:px-40 flex flex-col justify-center items-center">
+        <img
+          src="https://dinamik.kemakom.org/assets/img/logo.png"
+          class="w-48"
+          alt="logo" />
+        <h2 class="font-bold text-[32px] lg:text-5xl text-center">
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-r from-blue-950 to-white"
+            >Sem</span
+          >inar & Webinar
+        </h2>
+        <div
+          class="flex flex-col lg:flex-row justify-center items-center mt-14 border border-white rounded-2xl px-6 pb-6 bg-gradient-to-r from-slate-600 to-slate-950 bg-opacity-60">
+          <div>
+            <img
+              src="https://dinamik.kemakom.org/storage/masterdata/seminar/icons/ZnyuqcSNHtTfmP8PvqPYbdOQNU7mLn9PkYyBuvV0.png"
+              alt="About Dinamik"
+              class="w-52 lg:w-3/4 mt-7 lg:mt-0 lg:ml-12" />
+          </div>
+          <div>
+            <h4 class="font-bold text-4xl mt-5">Dinamik Talks</h4>
+            <p
+              class="text-center lg:text-start lg:px-0 lg:text-xl lg:font-semibold mt-4">
+              Dinamik Talks merupakan sesi pemaparan dan diskusi menarik yang
+              terbuka untuk umum. Dengan tema “Pathways Of Life Journey :
+              Raising Up Your Personal Success”, kegiatan ini menghadirkan
+              narasumber - narasumber berpengalaman yang akan memberikan wawasan
+              berharga tentang bagaimana mencapai kesuksesan pribadi.
+            </p>
+            <button
+              class="w-full lg:w-52 font-semibold text-white py-2 flex items-center justify-center mt-5 px-4 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-blue-500 hover:to-cyan-500">
+              Detail Seminar
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Seminar & Webinar Section End -->
+
+    <!-- Timeline Section Start -->
+    <section
+      id="timeline"
+      class="mt-32 lg:mt-60 mb-16 flex items-center flex-col">
+      <h2 class="font-bold text-[32px] lg:text-5xl text-center">
+        <span
+          class="bg-clip-text text-transparent bg-gradient-to-r from-blue-950 to-white"
+          >DIN</span
+        >AMIK Timeline
+      </h2>
+      
+    </section>
+    <!-- Timeline Section End -->
+    <script src="./dist/script.js"></script>
+  </body>
+</html>
