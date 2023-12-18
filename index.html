@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
     <link href="./dist/output.css" rel="stylesheet" />
     <title>Dinamik18 by Mujtabo</title>
   </head>
@@ -55,12 +61,13 @@
                   >
                 </li>
                 <li>
-                  <a href="#home" class="font-bold text-white py-2 mx-8 flex"
+                  <a href="#partner" class="font-bold text-white py-2 mx-8 flex"
                     >Partner</a
                   >
                 </li>
                 <li>
                   <button
+                    id="loginButton"
                     class="font-semibold text-white py-2 mx-8 flex items-center px-4 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-blue-500 hover:to-cyan-500">
                     Login
                   </button>
@@ -72,6 +79,59 @@
       </div>
     </header>
     <!-- Header End  -->
+
+    <!-- Login Content Start -->
+    <div class="relative">
+      <!-- Your overlay -->
+      <div
+        class="hidden fixed top-0 left-0 w-full h-full bg-slate-950 bg-opacity-70 z-10"
+        id="overlay"></div>
+
+      <!-- Your login form -->
+      <div
+        class="hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 flex-col lg:w-[450px] lg:h-[500px] w-96 h-[450px] bg-slate-900 border-2 border-solid border-slate-400 shadow-md z-20 rounded-xl"
+        id="loginForm">
+        <span
+          class="absolute top-3 right-3 text-base cursor-pointer text-slate-400"
+          onclick="closeLoginForm()"
+          >X</span
+        >
+        <div class="px-5 flex flex-col justify-center">
+          <p class="font-bold text-3xl lg:text-5xl my-10 mt-20 text-center">
+            Login
+          </p>
+
+          <input
+            type="email"
+            id="email"
+            placeholder="Masukan Email"
+            class="p-2 bg-slate-900 border-2 border-solid border-slate-400 rounded-lg" />
+
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            class="mt-5 p-2 bg-slate-900 border-2 border-solid border-slate-400 rounded-lg" />
+
+          <button
+            class="mt-5 w-full font-semibold text-white text-center py-2 flex justify-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-blue-500 hover:to-cyan-500"
+            onclick="login()">
+            Login
+          </button>
+
+          <button
+            class="mt-5 w-full font-semibold text-black text-center py-2 flex justify-center items-center rounded-md bg-white"
+            onclick="loginWithGoogle()">
+            <i class="fa-brands fa-google mr-2"></i> Login with Google
+          </button>
+
+          <a href="#" id="forgotPassword" class="text-center mt-5"
+            >Forgot Password?</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Login Content End -->
 
     <!-- Hero Section Start  -->
     <section class="mt-20 flex items-center flex-col">
@@ -606,6 +666,92 @@
       </div>
     </section>
     <!-- Timeline Section End -->
+
+    <!-- Sponsor Section Start -->
+    <section
+      id="partner"
+      class="mt-32 lg:mt-60 mb-16 flex items-center flex-col">
+      <div class="container px-[35px]">
+        <h2 class="font-bold text-[32px] lg:text-5xl text-center mb-10">
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-r from-blue-950 to-white"
+            >Our S</span
+          >ponsor & Media Partner
+        </h2>
+        <div class="flex flex-wrap justify-center gap-4 mb-5 lg:mb-10">
+          <div class="rounded-lg bg-white p-4 w-2/4 sm:w-1/4">
+            <img
+              src="https://dinamik.kemakom.org/landing/sponsor/codepolitan.png"
+              alt="codepolitan"
+              class="w-full mt-0 sm:mt-4" />
+          </div>
+          <div class="rounded-lg bg-white p-4 w-2/4 sm:w-1/4">
+            <img
+              src="https://dinamik.kemakom.org/landing/sponsor/elkopra.png"
+              alt="elkopra"
+              class="w-full" />
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center gap-1">
+          <div class="rounded-lg bg-white p-4 w-2/4 sm:w-1/4">
+            <img
+              src="https://dinamik.kemakom.org/landing/sponsor/idCloudHost.png"
+              alt="idCloudHost"
+              class="w-full mx-auto" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sponsor Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="mt-32 lg:mt-60 mb-16 flex items-center flex-col">
+      <div class="container lg:px-36">
+        <div class="px-4 lg:flex lg:w-full">
+          <div class="lg:w-1/2">
+            <div class="">
+              <a href="#home">
+                <img
+                  src="https://dinamik.kemakom.org/assets/img/logo.png"
+                  class="w-48 lg:w-72"
+                  alt="logo" />
+              </a>
+            </div>
+            <p class="mt-4 lg:text-lg lg:max-w-md">
+              Together, we're rising beyond boundaries to shape a future of
+              endless opportunities and unprecedented success
+            </p>
+          </div>
+          <div
+            class="flex justify-between lg:justify-normal mt-5 text-sm lg:w-1/2">
+            <div class="flex flex-col gap-2 lg:text-lg">
+              <p class="font-medium">USEFUL LINKS</p>
+              <a class="text-slate-400 font-medium" href="#home">Home</a>
+              <a class="text-slate-400 font-medium" href="#competition"
+                >Competition</a
+              >
+            </div>
+            <div class="flex flex-col gap-2 lg:text-lg lg:ml-24">
+              <p class="font-medium">PARTNER</p>
+              <a class="text-slate-400 font-medium" href="#partner"
+                >Our Partner</a
+              >
+              <a class="text-slate-400 font-medium" href="#home"
+                >Become a Partner</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <div class="mt-36 px-4 lg:flex lg:justify-between">
+          <p class="text-sm">Copyright © 2023 DINAMIK. All Rights Reserved.</p>
+          <a href="#" class=""
+            ><i class="fa-brands fa-instagram mt-5 lg:mt-0"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
     <script src="./dist/script.js"></script>
   </body>
 </html>
