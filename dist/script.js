@@ -108,3 +108,37 @@ function loginWithGoogle() {
   // Perform Google login logic here
   console.log("Logging in with Google");
 }
+
+// Checkbox
+const confirmationCheckbox = document.getElementById("confirmationCheckbox");
+const submitButton = document.getElementById("submitButton");
+
+// Update the initial state
+submitButton.disabled = !confirmationCheckbox.checked;
+
+confirmationCheckbox.addEventListener("change", function () {
+  submitButton.disabled = !confirmationCheckbox.checked;
+  if (confirmationCheckbox.checked) {
+    submitButton.classList.remove("bg-blue-900", "text-gray-300");
+    submitButton.classList.add("bg-blue-600", "text-white");
+  } else {
+    submitButton.classList.remove("bg-blue-600", "text-white");
+    submitButton.classList.add("bg-blue-900", "text-gray-300");
+  }
+});
+
+// FAQ Part
+function toggleFAQ(contentId, iconId) {
+  const faqContent = document.getElementById(contentId);
+  const toggleIcon = document.getElementById(iconId);
+
+  if (faqContent.classList.contains("hidden")) {
+    faqContent.classList.remove("hidden");
+    toggleIcon.classList.remove("fa-chevron-down");
+    toggleIcon.classList.add("fa-chevron-up");
+  } else {
+    faqContent.classList.add("hidden");
+    toggleIcon.classList.remove("fa-chevron-up");
+    toggleIcon.classList.add("fa-chevron-down");
+  }
+}

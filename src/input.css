@@ -31,3 +31,14 @@ body {
 .hamburger-active > span:nth-child(3) {
   @apply -rotate-45;
 }
+
+.custom-list {
+  display: flex;
+  align-items: center;
+}
+
+.custom-list::before {
+  content: url("/assets/checkbox.svg");
+  margin-right: 10px;
+  font-size: 10px;
+}
