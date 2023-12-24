@@ -42,3 +42,34 @@ body {
   margin-right: 10px;
   font-size: 10px;
 }
+
+#carousel-container {
+  @apply relative w-72 mx-auto overflow-hidden;
+}
+
+#carousel {
+  @apply flex transition-transform duration-500 ease-in-out;
+}
+
+.carousel-item {
+  @apply w-full flex-shrink-0;
+}
+
+#prev-btn,
+#next-btn {
+  @apply absolute top-1/2 transform -translate-y-1/2 text-2xl cursor-pointer;
+  background: none;
+  border: none;
+}
+
+#prev-btn {
+  @apply left-4;
+}
+
+#next-btn {
+  @apply right-4;
+}
+
+#indicator {
+  @apply text-center mt-2;
+}
